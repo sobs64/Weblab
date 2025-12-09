@@ -1,0 +1,185 @@
+:root {
+  --bg: #FCF5EE;
+  --accent-light: #FFC4C4;
+  --accent-mid: #EE6983;
+  --accent-dark: #850E35;
+  --text-dark: #3A3A3A;
+  --text-muted: #6B6B6B;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text-dark);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+.logo,
+h1,
+h2,
+h3 {
+  font-family: "Limelight", sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+p,
+li,
+a,
+ul,
+nav a,
+.contact-info,
+.resume-section,
+.education-entry {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.site-header {
+  background-color: var(--accent-dark);
+  padding: 15px 0;
+  color: white;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.main-nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #FFE9E9;
+  font-weight: 500;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--accent-light);
+}
+
+.content {
+  width: 75%;
+  margin: 40px auto;
+  display: block;
+}
+
+.profile-card {
+  float: left;
+  width: 360px;
+  background-color: var(--accent-light);
+  padding: 25px;
+  border-radius: 14px;
+  margin-right: 40px;
+  display: block;
+}
+
+.profile-card img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-card .muted {
+  color: var(--accent-mid);
+  font-weight: 500;
+}
+
+.bio {
+  float: left;
+  width: 50%;
+  display: block;
+  margin-top: 20px;
+  background-color: #fff7f7;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.bio h2 {
+  margin: 0 0 10px 0;
+}
+
+.content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 14px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn.primary {
+  background-color: var(--accent-mid);
+  color: white;
+}
+
+.btn.ghost {
+  border: 2px solid var(--accent-mid);
+  color: var(--accent-mid);
+}
+
+.resume-section,
+.education-entry,
+.contact-info {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+
+.resume-section h2,
+.education-entry h2,
+.contact-info h2 {
+  color: var(--accent-dark);
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-list a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--accent-mid);
+  font-family: "Poppins", sans-serif;
+}
+
+.site-footer {
+  margin-top: 40px;
+  padding: 15px 0;
+  background-color: var(--accent-dark);
+  color: white;
+  text-align: center;
+}

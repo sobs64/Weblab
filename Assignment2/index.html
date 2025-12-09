@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library Card Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #FFFAFA">
+    <center>
+        <div id="div-container">
+            <h1>Library Card Registration Form</h1>
+            <table>
+                <form method="post" action="library.php">
+                    <tr>
+                        <th>
+                            <label for="Fname">First Name: </label>
+                        </th>
+                        <td>
+                            <input type="text" id="Fname" name="Fname" placeholder="Tamara" required>
+                            <label for="Lname" style="font-weight: bold;">Last Name: </label>
+                            <input type="text" id="Lname" name="Lname" placeholder="Cariappa" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="Email">Email Id: </label>
+                        </th>
+                        <td>
+                            <input type="email" id="Email" name="Email" placeholder="tamara@example.com" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="PhoneNumber">Phone Number: </label>
+                        </th>
+                        <td>
+                            <input type="tel" id="PhoneNumber" name="PhoneNumber" placeholder="9874563210" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="Gender">Gender: </label>
+                        </th>
+                        <td>
+                            <label for="Female">Female</label>
+                            <input type="radio" id="Female" name="Gender" value="Female">
+                            <label for="Male">Male</label>
+                            <input type="radio" id="Male" name="Gender" value="Male">
+                            <label for="Other">Other</label>
+                            <input type="radio" id="Other" name="Gender" value="Other">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="Dob">Date of Birth: </label>
+                        </th>
+                        <td>
+                            <input type="date" id="Dob" name="Dob">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="Address">Address: </label>
+                        </th>
+                        <td>
+                            <textarea id="Address" name="Address" rows="3" cols="55"
+                                placeholder="House no, Street, City, Pincode"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="CollegeId">College ID / USN: </label>
+                        </th>
+                        <td>
+                            <input type="text" id="CollegeId" name="CollegeId" placeholder="1CR23CS197" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="Dept">Department: </label>
+                        </th>
+                        <td>
+                            <select id="Dept" name="Dept">
+                                <option value="CSE">CSE</option>
+                                <option value="ISE">ISE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="ME">ME</option>
+                                <option value="CIVIL">CIVIL</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="Year">Year of Study: </label>
+                        </th>
+                        <td>
+                            <select id="Year" name="Year">
+                                <option value="1st Year">1st Year</option>
+                                <option value="2nd Year">2nd Year</option>
+                                <option value="3rd Year">3rd Year</option>
+                                <option value="4th Year">4th Year</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="CardType">Library Card Type: </label>
+                        </th>
+                        <td>
+                            <label for="Student">Student</label>
+                            <input type="radio" id="Student" name="CardType" value="Student">
+                            <label for="Faculty">Faculty</label>
+                            <input type="radio" id="Faculty" name="CardType" value="Faculty">
+                            <label for="External">External</label>
+                            <input type="radio" id="External" name="CardType" value="External">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="Genres">Preferred Genres: </label>
+                        </th>
+                        <td>
+                            <label for="Fiction">Fiction</label>
+                            <input type="checkbox" id="Fiction" name="Genres[]" value="Fiction">
+                            <label for="NonFiction">Non-Fiction</label>
+                            <input type="checkbox" id="NonFiction" name="Genres[]" value="Non-Fiction">
+                            <label for="SciFi">Sci-Fi</label>
+                            <input type="checkbox" id="SciFi" name="Genres[]" value="Sci-Fi">
+                            <label for="Mystery">Mystery</label>
+                            <input type="checkbox" id="Mystery" name="Genres[]" value="Mystery">
+                            <label for="Academic">Academic</label>
+                            <input type="checkbox" id="Academic" name="Genres[]" value="Academic">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="IssueDate">Card Issue Date: </label>
+                        </th>
+                        <td>
+                            <input type="date" id="IssueDate" name="IssueDate">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="Password">Set PIN / Password: </label>
+                        </th>
+                        <td>
+                            <input type="password" id="Password" name="Password">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="Comments">Remarks: </label>
+                        </th>
+                        <td>
+                            <textarea id="Comments" name="Comments" rows="4" cols="55"
+                                placeholder="Any special requests or notes"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="Declaration">Declaration</label>
+                        </th>
+                        <td>
+                            <input type="radio" id="Declaration" name="Declaration" value="True" required>
+                            I confirm that the above information is correct and I agree to follow the library rules.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" name="Submit" value="Register" id="submit-reset" />
+                            <input type="reset" name="Reset" value="Reset" id="submit-reset"
+                                style="margin-left: 50px;" />
+                        </td>
+                    </tr>
+
+                    <tr style="color: #7D1C4A;">
+                        <th colspan="2" style="text-align: right; font-size: medium;">
+                            1CR23CS197, Tamara Cariappa, C2
+                        </th>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </center>
+</body>
+
+</html>
